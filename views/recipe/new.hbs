@@ -1,0 +1,19 @@
+<section class="form-container">
+  <h4>New Recipe</h4>
+  <form action="/recipe" method="post" class="recipe-form">
+    <div class="input-field">
+      <textarea name="recipe[content]" cols="30" rows="10" placeholder="Recipe"></textarea>
+    </div>
+    <div class="">
+      <select name="author" id="author">
+        <option value="" disabled selected>Choose the User</option>
+        {{#each users}}
+          <option value="{{id}}">{{email}}</option>
+        {{/each}}
+      </select>
+    </div>
+    <div class="input-field">
+      <input type="submit" value="Post Recipe" class="btn blue darken-1">
+    </div>
+  </form>
+</section>

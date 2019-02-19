@@ -1,0 +1,15 @@
+<div class="card">
+  <div class="card-content">
+    <a class="card-title" href="/recipe/{{id}}">
+      {{ content }}
+    </a>
+  </div>
+  <div class="card-action">
+    <a href="/user/{{ author.id }}" class="">{{ author.email }}</a>
+    <span class="recipe__date">{{ createdAt }}</span>
+    <span class="recipe_comments">{{ comments.length }} Comments</span>
+    <form class="" action="/recipe/{{id}}?_method=DELETE" method="POST">
+      <button type="submit" name="button">Delete</button>
+    </form>
+  </div>
+</div>
