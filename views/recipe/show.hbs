@@ -21,8 +21,6 @@
     </h5>
   </div>
 </div>
-<button href="/recipe/edit"> Update Recipe
-</button>
 
 </div>
 
@@ -46,14 +44,14 @@
 
 <div class="card">
   <div class="card-content">
-    <h4 class="card-title">Add a comment:</h6>
+    <h4 class="card-title">Update Recipe:</h6>
       <form method="POST" action="/recipe/{{id}}?_method=PUT" class="row">
         <p class="input-field inline col s10">
           <label for="content"></label>
           <input type="text" name="content" id="">
         </p>
         <p class="input-field inline col s2">
-          <input class="btn blue darken-1" type="submit" value="Submit">
+          <input class="btn blue darken-1" type="submit" value="Update">
         </p>
       </form>
   </div>
