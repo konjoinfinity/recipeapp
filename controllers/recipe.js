@@ -23,6 +23,10 @@ module.exports = {
   create: (req, res) => {
     Recipe.create({
       content: req.body.recipe.content,
+      title: req.body.recipe.title,
+      description: req.body.recipe.description,
+      ingredients: req.body.recipe.ingredients,
+      instructions: req.body.recipe.instructions,
       author: req.body.author
     }).then(recipe => {
       User.findOne({ _id: req.body.author }).then(user => {

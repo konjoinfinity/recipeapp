@@ -15,6 +15,10 @@ const Comment = new Schema({
 
 const Recipe = new Schema({
   content: String,
+  title: String,
+  description: String,
+  ingredients: String,
+  instructions: String,
   createdAt: {
     type: Date,
     default: Date.now()
